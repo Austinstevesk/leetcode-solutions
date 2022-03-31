@@ -57,10 +57,27 @@ class LRUCache:
         if key in self.cache:
             self.remove(self.cache[key])
         self.cache[key] = Node(key, value)
-        self.inert(self.cache[key])
+        self.insert(self.cache[key])
 
         if len(self.cache) > self.cap:
             # remove the LRU from the list and delete from hashmap
-            lru = self.left.next
+            lru = self.head.next
             self.remove(lru)
             del self.cache[lru.key]
+
+
+if __name__ == "__main__":
+    lru = LRUCache(2)
+    lru.put(1, 1)
+    print(lru.cache)
+    lru.put(2, 2)
+    print(lru.cache)
+    print(lru.get(1))
+    lru.put(3, 3)
+    print(lru.cache)
+    print(lru.get(2))
+    lru.put(4,4)
+    print(lru.cache)
+    print(lru.get(1))
+    print(lru.get(2))
+    print(lru.get(3))
