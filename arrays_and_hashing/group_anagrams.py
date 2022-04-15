@@ -26,6 +26,27 @@ Constraints:
 0 <= strs[i].length <= 100
 strs[i] consists of lowercase English letters.
 """
+
+class Solution(object):
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        result = {}
+        for i in strs:
+            x = "".join(sorted(i))
+            print(x)
+            if x in result:
+                result[x].append(i)
+            else:
+                result[x] = [i]
+        print(result)
+        return list(result.values())
+
+
+
+# another solution
 from collections import defaultdict
 
 def group_anagrams(strs):
