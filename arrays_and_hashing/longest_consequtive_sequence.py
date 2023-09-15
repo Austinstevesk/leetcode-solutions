@@ -36,6 +36,7 @@ Constraints:
 
 
 def longest_consequtive_sequence(nums):
+    # sets are easier to check
     num_set = set(nums)
     longest = 0
     
