@@ -154,3 +154,12 @@ print()
 print("search in binary tree")
 print(search(a_list, "a"))
 print(search(a_list, "y"))
+
+
+def tree_height(bt):
+    if bt is None:
+        return 0
+    return 1 + max(tree_height(bt.left), tree_height(bt.right))
+
+print("Tree height")
+print(tree_height(node))
