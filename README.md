@@ -13,3 +13,5 @@ Leetcode solutions - Interview Prep
 - rotated array
 - more methods on binary trees
 - user profiles using binary trees
+- hashmap implementation
+- sorting algorithms (bubble sort, insertion sort, merge sort and quick sort)
