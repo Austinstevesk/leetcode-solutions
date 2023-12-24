@@ -16,3 +16,4 @@ Leetcode solutions - Interview Prep
 - hashmap implementation
 - sorting algorithms (bubble sort, insertion sort, merge sort and quick sort)
 - longest common subsequence
+- knapsack problem
