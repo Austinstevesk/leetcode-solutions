@@ -17,3 +17,9 @@ Leetcode solutions - Interview Prep
 - sorting algorithms (bubble sort, insertion sort, merge sort and quick sort)
 - longest common subsequence
 - knapsack problem
+- graphs
+- bfs
+- dfs
+- connected nodes
+- weighted graphs
+- shortest paths
